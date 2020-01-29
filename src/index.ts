@@ -2,7 +2,7 @@ import 'make-promises-safe'
 import express from 'express'
 import path from 'path'
 
-const PORT: number = 8080
+const PORT: number | string | undefined = process.env.PORT || 5000
 const app = express()
 
 // Configure Express to use EJS
