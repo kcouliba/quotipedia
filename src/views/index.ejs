@@ -17,6 +17,9 @@
   <body>
     <div class="container">
       <h1 class="header">Quote</h1>
+      <% if (quote) { %>
+      <p><%= quote.content %></p>
+      <% } %>
     </div>
   </body>
 </html>
