@@ -1,0 +1,43 @@
+{
+  "name": "quotipedia",
+  "version": "1.0.0",
+  "description": "Draw a random quote linked to its author wikipedia info",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "prod": "tsc && node ./build/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcouliba/quotipedia.git"
+  },
+  "keywords": [
+    "quotable",
+    "wikipedia"
+  ],
+  "author": "kevin coulibaly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcouliba/quotipedia/issues"
+  },
+  "homepage": "https://github.com/kcouliba/quotipedia#readme",
+  "devDependencies": {
+    "@types/dotenv": "8.2.0",
+    "@types/express": "4.17.2",
+    "@types/node": "13.5.1",
+    "jest": "25.1.0",
+    "ts-node-dev": "1.0.0-pre.44",
+    "tslint": "6.0.0",
+    "typescript": "3.7.5"
+  },
+  "dependencies": {
+    "apollo-server-express": "2.9.16",
+    "axios": "0.19.2",
+    "ejs": "3.0.1",
+    "express": "4.17.1",
+    "make-promises-safe": "5.1.0"
+  }
+}
