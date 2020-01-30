@@ -19,7 +19,7 @@ app.use(express.static(__dirname + '/public'))
 app.get('/', async (req, res) => {
   try {
     const quote: Quote = await fetchRandomQuote()
-    const associatedWikis: Array<Wiki> = await fetchWikis(quote.author)
+    const associatedWikis: Wiki[] = await fetchWikis(quote.author)
 
     res.render('index', {
       quote,
@@ -43,9 +43,9 @@ app.get('*', async (req, res) => {
 const start = async () => {
   try {
     await app.listen(PORT)
-    console.log(`server started on port ${PORT}`)
+    // console.log(`server started on port ${PORT}`)
   } catch (err) {
-    console.error(err)
+    // console.error(err)
     process.exit(1)
   }
 }

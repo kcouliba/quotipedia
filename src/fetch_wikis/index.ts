@@ -7,7 +7,7 @@ const WIKIPEDIA_URL: string = 'https://{locale}.wikipedia.org/wiki'
 async function fetchWikis(
   search: string,
   locale: string = 'en',
-): Promise<Array<Wiki>> {
+): Promise<Wiki[]> {
   const url = WIKIPEDIA_API_URL.replace('{locale}', locale).replace(
     '{search}',
     search,
