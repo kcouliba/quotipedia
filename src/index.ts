@@ -8,6 +8,7 @@ const WIKIPEDIA_API_URL: string =
   'https://{locale}.wikipedia.org/w/api.php?action=query&prop=info&list=search&srsearch={search}&format=json'
 const RANDOM_QUOTE_API_URL: string = 'https://api.quotable.io/random'
 const WIKIPEDIA_URL: string = 'https://{locale}.wikipedia.org/wiki'
+
 const app = express()
 
 // Configure Express to use EJS
@@ -65,6 +66,14 @@ app.get('/', async (req, res) => {
       error,
     })
   }
+})
+
+app.get('/about', async (req, res) => {
+  res.render('about')
+})
+
+app.get('*', async (req, res) => {
+  res.render('404')
 })
 
 const start = async () => {
