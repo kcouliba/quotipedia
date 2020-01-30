@@ -1,3 +1,71 @@
+@font-face {
+  font-family: Sweetly Broken;
+  src: url(fonts/sweetly-broken.ttf);
+}
+
 body {
-  background-color: aqua;
+  background-color: #ffe;
+  color: rgb(54, 26, 8);
+}
+
+h3 {
+  color: rgb(84, 46, 8);
+  font-size: x-large;
+  margin-top: 3em;
+  box-shadow: 0 4px rgb(238, 175, 113);
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 0 5em;
+  border: 1px solid rgb(238, 175, 113);
+  border-radius: 2em;
+  box-shadow: 0.3em 0.2em 0.1em rgb(218, 185, 123);
+}
+
+.quote {
+  font-family: Arvo, Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+.author {
+  font-family: 'Sweetly Broken', Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  align-self: flex-end;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.wikis ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.wikis li {
+  display: flex;
+  flex: 0 1 0;
+  margin: 0.3em 0;
+  padding: 0 1em;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  border: 1px solid rgb(238, 175, 113);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgb(218, 185, 123);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wikis p {
+  flex: 1 1 auto;
+}
+
+.wikis a {
+  flex: none;
+}
+
+.wikis i {
+  color: rgb(54, 26, 8);
 }

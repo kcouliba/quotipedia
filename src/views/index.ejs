@@ -13,13 +13,36 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Arvo&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
   </head>
   <body>
     <div class="container">
-      <h1 class="header">Quote</h1>
-      <% if (quote) { %>
-      <p><%= quote.content %></p>
-      <% } %>
+      <h1 class="header">Quotipedia</h1>
+      <section class="quote-container">
+        <p class="quote"><%= quote.content %></p>
+        <p class="author">- <%= quote.author %></p>
+      </section>
+      <h3>Articles wikipedia en lien avec <span><%= quote.author %></span></h3>
+      <section class="wikis">
+        <ul>
+          <% associatedWikis.forEach(function(wiki) { %>
+          <li>
+            <p><%= wiki.title %></p>
+            <a href="<%= wiki.url %>" target="_blank"
+              ><i class="material-icons">open_in_new</i></a
+            >
+          </li>
+          <% }); %>
+        </ul>
+      </section>
     </div>
   </body>
 </html>
