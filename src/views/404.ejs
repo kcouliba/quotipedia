@@ -26,24 +26,9 @@
   <body>
     <div class="container">
       <h1 class="header">Quotipedia</h1>
-      <section class="quote-container">
-        <p class="quote"><%= quote.content %></p>
-        <p class="author">- <%= quote.author %></p>
-      </section>
-      <section class="wikis">
-        <p class="h2">
-          Articles wikipedia en lien avec <span><%= quote.author %></span>
-        </p>
-        <ul>
-          <% associatedWikis.forEach(function(wiki) { %>
-          <li>
-            <p><%= wiki.title %></p>
-            <a href="<%= wiki.url %>" target="_blank"
-              ><i class="material-icons">open_in_new</i></a
-            >
-          </li>
-          <% }); %>
-        </ul>
+      <section class="404">
+        <p>Désolé, mais il n'y a rien ici</p>
+        <a href="/">retour à l'accueil</a>
       </section>
     </div>
   </body>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Quotipedia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Arvo&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Quotipedia</h1>
+      <section class="about">
+        <h3 class="header">About</h3>
+        <p>
+          Quotipedia est un site qui va afficher, à chaque appel à la page
+          principale, une citation ainse que des pages Wikipedia liées à
+          l'auteur.e de la citation.
+        </p>
+        <p>
+          Ce projet a été réalisé à titre éducatif et ludique. Il est open
+          source et son code est accessible
+          <a href="https://github.com/kcouliba/quotipedia">ici</a>
+        </p>
+        <h3>Technos</h3>
+        <p>Côté serveur :</p>
+        <ul>
+          <li>
+            <b>TypeScript</b>
+            pour aider à la maintenabilité et la documentation du code
+          </li>
+          <li>
+            <b>Promises</b> pour gérer la récupération de données de façon
+            asynchrone
+          </li>
+          <li>La librairie <b>Express.js</b>, le serveur web</li>
+          <li>La librairie <b>axios</b> pour les requêtes vers les APIs</li>
+          <li><b>EJS</b> en tant que langage de templating</li>
+        </ul>
+        <p>Côté client :</p>
+        <ul>
+          <li>Librairie <b>Materialize CSS</b></li>
+          <li>
+            Font
+            <a href="https://fonts.google.com/specimen/Arvo"><b>Arvo</b></a>
+          </li>
+          <li>
+            Font
+            <a href="https://www.dafont.com/sweetly-broken.font"
+              ><b>Sweetly Broken</b></a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="credits">
+        <h3>Credits</h3>
+        <p>Ce projet utilise les API suivantes, merci pour leur travail.</p>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/lukePeavey/quotable#usage"
+              target="_blank"
+              >Quotable</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.mediawiki.org/wiki/API:Main_page"
+              target="_blank"
+              >Wikipedia</a
+            >
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
