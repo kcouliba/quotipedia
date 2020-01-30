@@ -8,7 +8,8 @@ body {
   color: rgb(54, 26, 8);
 }
 
-h3 {
+h3,
+.h2 {
   color: rgb(84, 46, 8);
   font-size: x-large;
   margin-top: 3em;
