@@ -1,0 +1,21 @@
+<div class="header clearfix">
+  <nav class="nav-wrapper">
+    <a class="brand-logo left" href="/">Quotipedia</a>
+    <ul class="right">
+      <li role="presentation">
+        <% if (page === "home") { %>
+        <a class="disabled" href="/">Home</a>
+        <% } else { %>
+        <a href="/">Home</a>
+        <% } %>
+      </li>
+      <li role="presentation">
+        <% if (page === "about") { %>
+        <a class="disabled" href="/About">About</a>
+        <% } else { %>
+        <a href="/About">About</a>
+        <% } %>
+      </li>
+    </ul>
+  </nav>
+</div>

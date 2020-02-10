@@ -24,12 +24,13 @@
     <link rel="stylesheet" href="styles.css" type="text/css" />
   </head>
   <body>
+    <%- include('partials/navbar', {page: "404"}) %>
     <div class="container">
-      <h1 class="header">Quotipedia</h1>
       <section class="404">
         <p>Désolé, mais il n'y a rien ici</p>
         <a href="/">retour à l'accueil</a>
       </section>
     </div>
+    <%- include('partials/footer') %>
   </body>
 </html>

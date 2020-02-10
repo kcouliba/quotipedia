@@ -8,6 +8,30 @@ body {
   color: rgb(54, 26, 8);
 }
 
+div.header * {
+  color: #ffe;
+}
+
+div.header nav {
+  background-color: rgb(54, 26, 8);
+}
+
+div.header nav a:hover {
+  background-color: rgb(30, 10, 10);
+}
+
+div.header nav a.disabled,
+div.header nav a.disabled:hover {
+  color: #aaa;
+  background-color: rgb(70, 40, 20);
+  cursor: pointer;
+}
+
+footer.footer {
+  display: flex;
+  justify-content: center;
+}
+
 h3,
 .h2 {
   color: rgb(84, 46, 8);
@@ -16,10 +40,19 @@ h3,
   box-shadow: 0 4px rgb(238, 175, 113);
 }
 
+.about h3 {
+  font-size: xx-large;
+}
+
+.about h4 {
+  font-size: large;
+}
+
 .quote-container {
   display: flex;
   flex-direction: column;
   justify-items: center;
+  margin-top: 5em;
   padding: 0 5em;
   border: 1px solid rgb(238, 175, 113);
   border-radius: 2em;
@@ -28,7 +61,7 @@ h3,
 
 .quote {
   font-family: Arvo, Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 3.5em;
   line-height: 1.2em;
 }
 

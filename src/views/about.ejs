@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="styles.css" type="text/css" />
   </head>
   <body>
+    <%- include('partials/navbar', {page: "about"}) %>
     <div class="container">
-      <h1 class="header">Quotipedia</h1>
       <section class="about">
-        <h3 class="header">About</h3>
+        <h3>About</h3>
         <p>
           Quotipedia est un site qui va afficher, à chaque appel à la page
           principale, une citation ainse que des pages Wikipedia liées à
@@ -39,7 +39,7 @@
           <a href="https://github.com/kcouliba/quotipedia">ici</a>
         </p>
         <h3>Technos</h3>
-        <p>Côté serveur :</p>
+        <h4>Serveur</h4>
         <ul>
           <li>
             <b>TypeScript</b>
@@ -53,7 +53,7 @@
           <li>La librairie <b>axios</b> pour les requêtes vers les APIs</li>
           <li><b>EJS</b> en tant que langage de templating</li>
         </ul>
-        <p>Côté client :</p>
+        <h4>Client</h4>
         <ul>
           <li>Librairie <b>Materialize CSS</b></li>
           <li>
@@ -89,5 +89,6 @@
         </ul>
       </section>
     </div>
+    <%- include('partials/footer') %>
   </body>
 </html>
