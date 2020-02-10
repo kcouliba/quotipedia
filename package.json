@@ -44,9 +44,11 @@
     "typescript": "3.7.5"
   },
   "dependencies": {
+    "@types/helmet": "0.0.45",
     "axios": "0.19.2",
     "ejs": "3.0.1",
     "express": "4.17.1",
+    "helmet": "3.21.2",
     "make-promises-safe": "5.1.0"
   }
 }

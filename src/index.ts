@@ -1,6 +1,7 @@
 import 'make-promises-safe'
 import express from 'express'
 import path from 'path'
+import helmet from 'helmet'
 
 import fetchRandomQuote, { Quote } from './fetch_random_quote'
 import fetchWikis, { Wiki } from './fetch_wikis'
@@ -15,6 +16,8 @@ app.set('view engine', 'ejs')
 
 // Serve static files (css, javascript, ...)
 app.use(express.static(__dirname + '/public'))
+// Protect sensitive server information
+app.use(helmet())
 
 app.get('/', async (req, res) => {
   try {
