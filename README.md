@@ -4,7 +4,7 @@ Ce projet open source a été réalisé à titre éducatif et ludique.
 
 Site web accessible [ici](https://quotipedia.herokuapp.com/)
 
-## Technos
+## Tech stack
 
 Côté serveur
 
@@ -22,13 +22,13 @@ Côté client
   - [Arvo](https://fonts.google.com/specimen/Arvo)
   - [Sweetly Broken](https://www.dafont.com/sweetly-broken.font)
 
-## Idées d'évolutions
+## Evolutions
 
-- Partager les données affichées (mail, réseaux sociaux, ...)
+- Partager une citation (mail, réseaux sociaux, ...)
 - Gestion de citations favorites
 - Multi locale
 - Traduction des citations
-- Optimisation des sources chargées (caching)
+- Optimisation du chargement des ressources (caching)
 
 ## Credits
 
