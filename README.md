@@ -1,6 +1,8 @@
 # Quotipedia
 
-Ce projet open source a été réalisé à titre éducatif et ludique. Son code source est accessible [ici](https://github.com/kcouliba/quotipedia)
+Ce projet open source a été réalisé à titre éducatif et ludique.
+
+Site web accessible [ici](https://quotipedia.herokuapp.com/)
 
 ## Technos
 
@@ -10,14 +12,15 @@ Côté serveur
 - Promises pour gérer la récupération de données de façon asynchrone
 - La librairie Express.js, le serveur web
 - La librairie axios pour les requêtes vers les APIs
-- EJS en tant que langage de templating</li>
+- La librairie helmet pour la protection d'informations du serveur
+- EJS en tant que langage de templating
 
 Côté client
 
-- Librairie (Materialize CSS)[https://materializecss.com/]
+- Librairie [Materialize CSS](https://materializecss.com/)
 - Fonts
-  - (Arvo)[https://fonts.google.com/specimen/Arvo]
-  - (Sweetly Broken)[https://www.dafont.com/sweetly-broken.font]
+  - [Arvo](https://fonts.google.com/specimen/Arvo)
+  - [Sweetly Broken](https://www.dafont.com/sweetly-broken.font)
 
 ## Idées d'évolutions
 
@@ -25,7 +28,7 @@ Côté client
 - Gestion de citations favorites
 - Multi locale
 - Traduction des citations
-- Optimisation des sources chargées
+- Optimisation des sources chargées (caching)
 
 ## Credits
 
