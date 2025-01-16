@@ -1,7 +1,7 @@
-import 'make-promises-safe'
 import express from 'express'
-import path from 'path'
 import helmet from 'helmet'
+import 'make-promises-safe'
+import path from 'path'
 
 import fetchRandomQuote, { Quote } from './fetch_random_quote'
 import fetchWikis, { Wiki } from './fetch_wikis'
