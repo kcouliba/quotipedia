@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const RANDOM_QUOTE_API_URL: string = 'https://api.quotable.io/random'
+const RANDOM_QUOTE_API_URL: string = 'http://api.quotable.io/random'
 
 async function fetchRandomQuote(): Promise<Quote> {
   const { data } = await axios(RANDOM_QUOTE_API_URL)
